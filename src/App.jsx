@@ -19,8 +19,9 @@ function App() {
       <HeroSection />
       <AboutSection />
       <Skills />
+       <Projects />
       <Services />
-      <Projects />
+     
       <Resume />
       <Contact />
       <Footer />

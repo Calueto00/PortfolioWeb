@@ -22,7 +22,7 @@ export default function Skills(){
                     <div className="border bg-zinc-900 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y ">
                         <h3 className="text-xl font-medium text-slate-200">Frontend</h3>
 
-                        <ul className="space-y-2 space-x-2 text-slate-300">
+                        <ul className="space-y-2 space-x-2 text-lg text-slate-300">
                             <button className="border rounded-full border-red-600 px-3">Html</button>
                             <button className="border rounded-full border-red-600 px-2">Css</button>
                             <button className="border rounded-full border-red-600 px-2">Tailwind</button>

@@ -36,26 +36,26 @@ export default function Projects(){
                 <div className="text-center space-y-2">
                     <span className="text-sm text-slate-400">My Portfolio</span>
                     <h2 className="text-red-600 text-2xl font-bold">Check My Wonderful Work</h2>
-                    <p className='text-slate-200 text-md'>A collection of projects I've worked on, ranging from web applications 
+                    <p className='text-slate-200 text-lg'>A collection of projects I've worked on, ranging from web applications 
                         <br /> to websites and everything in between.</p>
                 </div>
 
-                <div className='grid lg:grid-cols-3 gap-10 w-full'>
+                <div className='grid lg:grid-cols-3 gap-3 w-full'>
                     {
                         projects?.map(project => (
                             <div className='bg-zinc-950 hover:shadow-md shadow-zinc-950 hover:scale-y-105 delay-150 duration-300
-                             relative h-77 w-full rounded-lg p-1 cursor-pointer'>
+                             relative h-80 w-full rounded-xl p-2 cursor-pointer'>
                                 <img 
                                     src={project?.image}
-                                    className='w-full h-34 rounded-t-md object-top object-cover'
+                                    className='w-full h-34 rounded-t-xl object-top object-cover'
                                      alt="" />
                                 <div className='p-2 space-y-2'>
-                                    <h3 className='text-white font-medium text-lg'>{project.name}</h3>
-                                    <p className='text-slate-300'>{project.description}</p>
+                                    <h3 className='text-white font-medium text-xl'>{project.name}</h3>
+                                    <p className='text-slate-300 '>{project.description}</p>
                                 </div>
                                 <div className='p-2'>
                                     <button className='delay-150 duration transition hover:scale-x-105 '>
-                                        <a href={project.href} className='px-4 py-2 bg-red-700 rounded-full text-slate-200'>View</a>
+                                        <a href={project.href} className='px-6 py-3 bg-red-700 rounded-full text-slate-200'>View</a>
                                     </button>
                                 </div>
                                

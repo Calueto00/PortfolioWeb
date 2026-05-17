@@ -14,7 +14,7 @@ export default function AboutSection() {
                     <div className=" flex-1 space-y-3">
                         <span className="text-sm text-slate-400">Who am I</span>
                         <h2 className="text-2xl font-bold text-red-600">About Me</h2>
-                        <h3 className="text-slate-200 text-2xl font-bold">Paulo Calueto Francisco</h3>
+                        <h3 className="text-slate-200 text-3xl font-bold">Paulo Calueto Francisco</h3>
 
                         <p className="text-lg text-slate-300 text-justify">
                             I'm passionate creative developer full-stack with 
@@ -34,7 +34,7 @@ export default function AboutSection() {
                         </p>
 
                         <button className="hover:scale-105 transition-all deay-150 duration transform cursor-pointer">
-                            <a className="px-4 py-2 rounded-full bg-red-600/90 text-lg text-slate-300 shadow-md shadow-red-600/90"
+                            <a className="px-6 py-3 rounded-full bg-red-600/90 text-lg text-slate-300 shadow-md shadow-red-600/90"
                              href="#">Download Cv</a>
                         </button>
                     </div>

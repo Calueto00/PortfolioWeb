@@ -15,7 +15,7 @@ const icons = [
   },
   {
     src: facebook,
-    href: '#',
+    href: 'https://web.facebook.com/PauloCalueto',
     style: 'w-5 h-5 hover:scale-105 bg-white hover:shadow shadow-blue-600 rounded-full delay-150 duration-300 transition-all ease-in-out transform'
   },
   {
@@ -30,7 +30,7 @@ const icons = [
   },
   {
     src: github,
-    href: '#',
+    href: 'https://github.com/dashboard',
     style: 'w-5 h-5 hover:scale-105 bg-white hover:shadow-md shadow-pink-600 rounded-full delay-150 duration-300 transition-all ease-in-out transform'
   }
 ]
@@ -39,7 +39,7 @@ export default function Footer(){
 
     const [data, setData] = useState(new Date())
     return(
-        <footer className="bg-zinc-950 py-4">
+        <footer className="bg-black/90 py-4">
             <div className="md:max-w-6xl mx-auto flex items-center justify-between">
                <h4 className="text-slate-400 text-sm">Copyright @All rights reserved {data.getFullYear()}</h4>
                <ul className='space-x-2 flex'>

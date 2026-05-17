@@ -21,7 +21,7 @@ export default function Services() {
                 <div className="text-center space-y-2">
                     <span className="text-sm text-slate-400">What I do</span>
                     <h2 className="text-2xl font-bold text-red-600">My Services</h2>
-                    <p className="text-slate-300 max-w-2xl mx-auto text-md">
+                    <p className="text-slate-300 max-w-3xl mx-auto text-lg">
                         I deliver full-stack web solutions using Laravel, React, Next.js and modern tooling. From clean UI/UX interfaces to secure backend APIs, I help businesses launch reliable, high-performance digital products.
                     </p>
                 </div>
