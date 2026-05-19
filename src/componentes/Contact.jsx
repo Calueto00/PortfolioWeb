@@ -1,19 +1,19 @@
 
 export default function Contact(){
     return(
-        <footer id="contact" className="h-screen bg-zinc-950">
-            <div className="h-full space-y-6 md:max-w-6xl mx-auto flex flex-col items-center justify-center">
+        <footer id="contact" className="md:h-screen bg-zinc-950">
+            <div className="h-full space-y-6 md:max-w-6xl mx-auto md:p-0 p-6 flex flex-col items-center justify-center">
                 <div className="text-center space-y-3">
                     <span className="text-sm text-slate-400">Contact</span>
                     <h3 className="text-2xl font-bold text-red-600">Get in Touch With me</h3>
-                    <p className="text-slate-300 text-lg">I'm always open to discussing new opportunities, creative projects, or partnerships. <br />
+                    <p className="text-slate-300 md:text-lg">I'm always open to discussing new opportunities, creative projects, or partnerships. <br />
                         Whether you have a specific project in mind or just want to explore possibilities. I'd love to connect.
                     </p>
                 </div>
 
                 <div className="h-1/2 space-y-3 border-zinc-900 border w-full p-6 rounded-lg bg-zinc-900 shadow shadow-zinc-950">
                     <h3 className="text-lg text-slate-200 font-medium">Say Something</h3>
-                    <div className="flex  justify-between gap-8">
+                    <div className="flex md:flex-row flex-col  justify-between gap-8">
                         <form action="https://formsubmit.co/paulo.calueto.francisco@gmail.com" className="flex-1 rounded-lg space-y-3">
                             <div className="space-y-3">
                                 <input type="text" 

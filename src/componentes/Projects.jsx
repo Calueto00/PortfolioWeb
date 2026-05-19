@@ -31,16 +31,16 @@ const projects = [
 export default function Projects(){
     const [mouse, setMouse] = useState(false)
     return(
-        <section id='projects' className="bg-black/90 h-screen">
-            <div className="lg:max-w-6xl space-y-6 mx-auto h-full flex flex-col items-center justify-center">
+        <section id='projects' className="bg-black/90 md:h-screen">
+            <div className="md:max-w-6xl md:space-y-6 space-y-3 p-6 md:p-0 mx-auto h-full flex flex-col items-center justify-center">
                 <div className="text-center space-y-2">
                     <span className="text-sm text-slate-400">My Portfolio</span>
                     <h2 className="text-red-600 text-2xl font-bold">Check My Wonderful Work</h2>
-                    <p className='text-slate-200 text-lg'>A collection of projects I've worked on, ranging from web applications 
+                    <p className='text-slate-200 md:text-lg'>A collection of projects I've worked on, ranging from web applications 
                         <br /> to websites and everything in between.</p>
                 </div>
 
-                <div className='grid lg:grid-cols-3 gap-3 w-full'>
+                <div className='grid lg:grid-cols-3 md:gap-3 gap-6 w-full'>
                     {
                         projects?.map(project => (
                             <div className='bg-zinc-950 hover:shadow-md shadow-zinc-950 hover:scale-y-105 delay-150 duration-300
@@ -50,12 +50,12 @@ export default function Projects(){
                                     className='w-full h-34 rounded-t-xl object-top object-cover'
                                      alt="" />
                                 <div className='p-2 space-y-2'>
-                                    <h3 className='text-white font-medium text-xl'>{project.name}</h3>
+                                    <h3 className='text-white font-medium md:text-xl text-lg'>{project.name}</h3>
                                     <p className='text-slate-300 '>{project.description}</p>
                                 </div>
                                 <div className='p-2'>
                                     <button className='delay-150 duration transition hover:scale-x-105 '>
-                                        <a href={project.href} className='px-6 py-3 bg-red-700 rounded-full text-slate-200'>View</a>
+                                        <a href={project.href} className='md:px-6 px-4 md:py-3 py-2 bg-red-700 rounded-full text-slate-200'>View</a>
                                     </button>
                                 </div>
                                
@@ -64,10 +64,10 @@ export default function Projects(){
                     }
                 </div>
 
-                <div className='bg-zinc-950 w-1/2 flex items-center justify-between px-3 py-3 rounded-full'>
+                <div className='bg-zinc-950 md:w-1/2 w-full flex items-center justify-between px-3 py-3 rounded-full'>
                     <h4 className='text-slate-200'>Hire me for your Awesome Project</h4>
                     <button className='delay-150 transition duration-300 hover:scale-105'>
-                        <a className='bg-white rounded-full p-2 px-4'  href="#">Hire Me</a>
+                        <a className='bg-white rounded-full p-2 md:px-4'  href="#">Hire Me</a>
                     </button>
                 </div>
             </div>

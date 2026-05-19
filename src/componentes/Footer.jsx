@@ -35,26 +35,26 @@ const icons = [
   }
 ]
 
-export default function Footer(){
+export default function Footer() {
 
-    const [data, setData] = useState(new Date())
-    return(
-        <footer className="bg-black/90 py-4">
-            <div className="md:max-w-6xl mx-auto flex items-center justify-between">
-               <h4 className="text-slate-400 text-sm">Copyright @All rights reserved {data.getFullYear()}</h4>
-               <ul className='space-x-2 flex'>
-                    {
-                    icons?.map(icon =>(
-                        <li key={icon}>
-                        <a  href={icon.href}>
-                            <img className={icon.style} src={icon.src} alt="" />
-                        </a>
-                        </li>
-                    ))
-                    }
-                    
-                </ul>
-            </div>
-        </footer>
-    )
+  const [data, setData] = useState(new Date())
+  return (
+    <footer className="bg-black/90 py-4 p-6">
+      <div className="md:max-w-6xl mx-auto flex items-center justify-between">
+        <h4 className="text-slate-400 text-sm">Copyright @All rights reserved {data.getFullYear()}</h4>
+        <ul className='space-x-2 flex'>
+          {
+            icons?.map(icon => (
+              <li key={icon}>
+                <a href={icon.href}>
+                  <img className={icon.style} src={icon.src} alt="" />
+                </a>
+              </li>
+            ))
+          }
+
+        </ul>
+      </div>
+    </footer>
+  )
 }

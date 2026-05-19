@@ -54,8 +54,8 @@ export default function Resume(){
         <section id="resume" className="min-h-screen bg-black/90 py-16">
             <div className="lg:max-w-6xl mx-auto px-4">
                 <div className="text-center mb-12 space-y-3">
-                    <span className="text-sm text-slate-400 uppercase tracking-[2px]">Experience & Education</span>
-                    <h2 className="text-3xl md:text-2xl font-bold text-red-600">My Resume</h2>
+                    <span className="text-sm text-slate-400  ">Experience & Education</span>
+                    <h2 className="md:text-3xl text-2xl font-bold text-red-600">My Resume</h2>
                     <p className="max-w-2xl mx-auto text-slate-300 text-base md:text-lg">
                         I combine technical leadership with hands-on development experience. Below are the roles and studies that shaped my skills in building modern web products.
                     </p>
