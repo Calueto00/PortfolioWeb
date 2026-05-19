@@ -24,7 +24,7 @@ export default function Contact(){
                     className=" space-y-3 border-zinc-900 border w-full p-6 rounded-lg bg-zinc-800 shadow shadow-zinc-950">
                     <h3 className="text-lg text-slate-200 font-medium">Say Something</h3>
                     <div className="flex md:flex-row flex-col  justify-between gap-8">
-                        <form action="https://formsubmit.co/paulo.calueto.francisco@gmail.com" className="flex-1 rounded-lg space-y-3">
+                        <form action="https://formsubmit.co/paulo.calueto.francisco@gmail.com" method="post" className="flex-1 rounded-lg space-y-3">
                             <div className="space-y-3">
                                 <input type="text" 
                                         placeholder="Name..."
