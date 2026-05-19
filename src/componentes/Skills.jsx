@@ -4,7 +4,7 @@ export default function Skills(){
         <section className="md:h-screen min-h-screen bg-zinc-950">
             <div className="lg:max-w-6xl mx-auto gap-3 py-12 md:py-0 p-4 md:p-0 h-full flex md:flex-row flex-col md:gap-15 items-center justify-between">
                 <motion.div 
-                    initial={{opacity:0, x: -100}} 
+                    initial={{opacity:0, x: -50}} 
                     whileInView={{opacity:1, x:0}}
                     viewport={{once:true, amount:0.5}}
                     transition={{duration:0.9}}
@@ -24,7 +24,7 @@ export default function Skills(){
                     </div>
                 </motion.div>
                 <motion.div 
-                    initial={{opacity:0, x: 100}} 
+                    initial={{opacity:0, x: 50}} 
                     whileInView={{opacity:1, x:0}}
                     viewport={{once:true, amount:0.5}}
                     transition={{duration:0.9}}

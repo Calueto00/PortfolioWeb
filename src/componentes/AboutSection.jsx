@@ -8,13 +8,13 @@ export default function AboutSection() {
                 
 
                  <div className="flex items-center md:flex-row flex-col justify-center gap-3 md:gap-9 w-full">
-                    <motion.div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.5}} transition={{duration:0.9}}
+                    <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.5}} transition={{duration:0.9}}
                         className="md:flex-1 w-full ">
                         <img src={perfil} alt="" className='md:h-100 h-70 w-full object-fit rounded-lg' />
                     </motion.div>
 
 
-                    <motion.div initial={{opacity:0, x:100}} whileInView={{opacity:1, x:0}} viewport={{once:true,amount: 0.5}} transition={{duration:0.9}}
+                    <motion.div initial={{opacity:0, x:50}} whileInView={{opacity:1, x:0}} viewport={{once:true,amount: 0.5}} transition={{duration:0.9}}
                         className=" flex-1 md:space-y-3 space-y-1">
                         <span className="text-sm text-slate-400">Who am I</span>
                         <h2 className="md:text-2xl text-lg font-bold text-red-600">About Me</h2>

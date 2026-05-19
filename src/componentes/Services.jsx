@@ -33,7 +33,7 @@ export default function Services() {
                 </motion.div>
 
                 <motion.div 
-                    initial={{opacity:0, x:-100}}
+                    initial={{opacity:0, x:-50}}
                     whileInView={{opacity:1, x:0}}
                     viewport={{once:true, amount:0.5}}
                     transition={{duration:1}}

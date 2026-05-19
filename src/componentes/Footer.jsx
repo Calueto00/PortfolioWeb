@@ -41,7 +41,7 @@ export default function Footer() {
   return (
     <footer className="bg-zinc-800 py-4 p-4 md:p-6">
       <div className="md:max-w-6xl mx-auto flex md:flex-row flex-col space-y-4 md:space-y-0 items-center justify-between">
-        
+        <h4 className="text-slate-400 text-sm">Copyright @All rights reserved {data.getFullYear()}</h4>
         <ul className='space-x-2 flex'>
           {
             icons?.map(icon => (
@@ -54,7 +54,7 @@ export default function Footer() {
           }
 
         </ul>
-        <h4 className="text-slate-400 text-sm">Copyright @All rights reserved {data.getFullYear()}</h4>
+        
       </div>
     </footer>
   )

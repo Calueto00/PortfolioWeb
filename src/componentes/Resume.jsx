@@ -54,7 +54,7 @@ export default function Resume(){
         <section id="resume" className="min-h-screen bg-black/85 py-12">
             <div className="lg:max-w-6xl mx-auto px-4">
                 <motion.div
-                    initial={{opacity:0, y:-100}}
+                    initial={{opacity:0, y:-50}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{once:true, amount:0.5}}
                     transition={{duration:1}}
@@ -69,7 +69,7 @@ export default function Resume(){
                 <div className="grid gap-4 lg:grid-cols-2">
                     <div className="space-y-3">
                         <motion.div 
-                            initial={{opacity:0, x:-100}}
+                            initial={{opacity:0, x:-50}}
                             whileInView={{opacity:1, x:0}}
                             viewport={{once:true, amount:0.5}}
                             transition={{duration:1}}
@@ -97,7 +97,7 @@ export default function Resume(){
 
                     <div className="space-y-3">
                         <motion.div 
-                            initial={{opacity:0, x:100}}
+                            initial={{opacity:0, x:50}}
                             whileInView={{opacity:1, x:0}}
                             viewport={{once:true, amount:0.5}}
                             transition={{duration:1}}
