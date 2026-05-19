@@ -24,10 +24,10 @@ export default function Skills(){
                     </div>
                 </motion.div>
                 <motion.div 
-                    initial={{opacity:0, x: 50}} 
-                    whileInView={{opacity:1, x:0}}
+                    initial={{opacity:0, y: 40}} 
+                    whileInView={{opacity:1, y:0}}
                     viewport={{once:true, amount:0.5}}
-                    transition={{duration:0.9}}
+                    transition={{duration:1}}
                     className="md:flex-1 grid md:grid-cols-2 grid-cols-1 gap-6">
                     <div className="border bg-zinc-800 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y ">
                         <h3 className="md:text-xl text-lg font-medium text-slate-200">Frontend</h3>

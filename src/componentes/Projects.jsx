@@ -34,7 +34,7 @@ export default function Projects(){
         <section id='projects' className="bg-black/85 md:h-screen">
             <div className="md:max-w-6xl md:space-y-6 space-y-3 py-12 md:py-0 p-4 md:p-0 mx-auto h-full flex flex-col items-center justify-center">
                 <motion.div
-                    initial={{opacity:0, y:-70}}
+                    initial={{opacity:0, y:-50}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{once:true, amount:0.5}}
                     transition={{duration:0.9}}
@@ -46,10 +46,10 @@ export default function Projects(){
                 </motion.div>
 
                 <motion.div 
-                    initial={{opacity:0, y:100}}
+                    initial={{opacity:0, y:50}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{once:true, amount:0.5}}
-                    transition={{duration:0.9}}
+                    transition={{duration:1}}
                     className='grid lg:grid-cols-3 md:gap-3 gap-6 w-full'>
                     {
                         projects?.map(project => (

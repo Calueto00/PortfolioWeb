@@ -97,8 +97,8 @@ export default function Resume(){
 
                     <div className="space-y-3">
                         <motion.div 
-                            initial={{opacity:0, x:50}}
-                            whileInView={{opacity:1, x:0}}
+                            initial={{opacity:0, y:40}}
+                            whileInView={{opacity:1, y:0}}
                             viewport={{once:true, amount:0.5}}
                             transition={{duration:1}}
                             className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-5 shadow-xl shadow-black/20">
