@@ -39,7 +39,7 @@ export default function Footer() {
 
   const [data, setData] = useState(new Date())
   return (
-    <footer className="bg-black/90 py-4 p-4 md:p-6">
+    <footer className="bg-zinc-800 py-4 p-4 md:p-6">
       <div className="md:max-w-6xl mx-auto flex md:flex-row flex-col space-y-4 md:space-y-0 items-center justify-between">
         
         <ul className='space-x-2 flex'>

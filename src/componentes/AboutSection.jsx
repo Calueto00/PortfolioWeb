@@ -1,17 +1,21 @@
+import { motion } from 'framer-motion'
+
 import perfil from '../assets/perfil.png'
 export default function AboutSection() {
     return (
-        <section id="about" className="md:h-screen  bg-black/90">
+        <section id="about" className="md:h-screen  bg-black/85">
             <div className="lg:max-w-6xl py-12 md:py-0 p-4 md:p-0 space-y-3 mx-auto h-full flex flex-col items-center justify-center">
                 
 
                  <div className="flex items-center md:flex-row flex-col justify-center gap-3 md:gap-9 w-full">
-                    <div className="md:flex-1 w-full ">
+                    <motion.div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.5}} transition={{duration:0.9}}
+                        className="md:flex-1 w-full ">
                         <img src={perfil} alt="" className='md:h-100 h-70 w-full object-fit rounded-lg' />
-                    </div>
+                    </motion.div>
 
 
-                    <div className=" flex-1 md:space-y-3 space-y-1">
+                    <motion.div initial={{opacity:0, x:100}} whileInView={{opacity:1, x:0}} viewport={{once:true,amount: 0.5}} transition={{duration:0.9}}
+                        className=" flex-1 md:space-y-3 space-y-1">
                         <span className="text-sm text-slate-400">Who am I</span>
                         <h2 className="md:text-2xl text-lg font-bold text-red-600">About Me</h2>
                         <h3 className="text-slate-200 md:text-3xl text-xl font-bold">Paulo Calueto Francisco</h3>
@@ -37,7 +41,7 @@ export default function AboutSection() {
                             <a className="md:px-6 md:py-3 px-4 py-1 rounded-full bg-red-600/90 text-lg text-slate-300 shadow-md shadow-red-600/90"
                              href="#">Download Cv</a>
                         </button>
-                    </div>
+                    </motion.div>
                  </div>
             </div>
         </section>

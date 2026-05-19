@@ -26,21 +26,31 @@ const projects = [
         href: 'https://syntax-core.vercel.app/'
     }
 ]
-
+import { motion } from 'framer-motion'
 
 export default function Projects(){
     const [mouse, setMouse] = useState(false)
     return(
-        <section id='projects' className="bg-black/90 md:h-screen">
+        <section id='projects' className="bg-black/85 md:h-screen">
             <div className="md:max-w-6xl md:space-y-6 space-y-3 py-12 md:py-0 p-4 md:p-0 mx-auto h-full flex flex-col items-center justify-center">
-                <div className="text-center space-y-2">
+                <motion.div
+                    initial={{opacity:0, y:-70}}
+                    whileInView={{opacity:1, y:0}}
+                    viewport={{once:true, amount:0.5}}
+                    transition={{duration:0.9}}
+                    className="text-center space-y-2">
                     <span className="text-sm text-slate-400">My Portfolio</span>
                     <h2 className="text-red-600 text-2xl font-bold">Check My Wonderful Work</h2>
                     <p className='text-slate-200 md:text-lg'>A collection of projects I've worked on, ranging from web applications 
                         <br /> to websites and everything in between.</p>
-                </div>
+                </motion.div>
 
-                <div className='grid lg:grid-cols-3 md:gap-3 gap-6 w-full'>
+                <motion.div 
+                    initial={{opacity:0, y:100}}
+                    whileInView={{opacity:1, y:0}}
+                    viewport={{once:true, amount:0.5}}
+                    transition={{duration:0.9}}
+                    className='grid lg:grid-cols-3 md:gap-3 gap-6 w-full'>
                     {
                         projects?.map(project => (
                             <div className='bg-zinc-950 hover:shadow-md shadow-zinc-950 hover:scale-y-105 delay-150 duration-300
@@ -62,7 +72,7 @@ export default function Projects(){
                             </div>
                         ))
                     }
-                </div>
+                </motion.div>
 
                 <div className='bg-zinc-950 md:w-1/2 w-full flex items-center justify-between px-3 py-3 rounded-full'>
                     <h4 className='text-slate-200 '>Hire me for your Project</h4>

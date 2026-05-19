@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion"
 export default function Resume(){
     const experiences = [
         {
@@ -51,19 +51,29 @@ export default function Resume(){
     ]
 
     return (
-        <section id="resume" className="min-h-screen bg-black/90 py-12">
+        <section id="resume" className="min-h-screen bg-black/85 py-12">
             <div className="lg:max-w-6xl mx-auto px-4">
-                <div className="text-center mb-12 space-y-3">
+                <motion.div
+                    initial={{opacity:0, y:-100}}
+                    whileInView={{opacity:1, y:0}}
+                    viewport={{once:true, amount:0.5}}
+                    transition={{duration:1}}
+                     className="text-center mb-12 space-y-3">
                     <span className="text-sm text-slate-400  ">Experience & Education</span>
                     <h2 className="md:text-3xl text-2xl font-bold text-red-600">My Resume</h2>
                     <p className="max-w-2xl mx-auto text-slate-300 text-base md:text-lg">
                         I combine technical leadership with hands-on development experience. Below are the roles and studies that shaped my skills in building modern web products.
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="grid gap-4 lg:grid-cols-2">
                     <div className="space-y-3">
-                        <div className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-4 shadow-xl shadow-black/20">
+                        <motion.div 
+                            initial={{opacity:0, x:-100}}
+                            whileInView={{opacity:1, x:0}}
+                            viewport={{once:true, amount:0.5}}
+                            transition={{duration:1}}
+                            className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-4 shadow-xl shadow-black/20">
                             <h3 className="text-xl font-semibold text-slate-100 mb-4">Professional Experience</h3>
                             <div className="space-y-3">
                                 {experiences.map((item, index) => (
@@ -82,11 +92,16 @@ export default function Resume(){
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div className="space-y-3">
-                        <div className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-5 shadow-xl shadow-black/20">
+                        <motion.div 
+                            initial={{opacity:0, x:100}}
+                            whileInView={{opacity:1, x:0}}
+                            viewport={{once:true, amount:0.5}}
+                            transition={{duration:1}}
+                            className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-5 shadow-xl shadow-black/20">
                             <h3 className="text-xl font-semibold text-slate-100 mb-4">Education & Certifications</h3>
                             <div className="space-y-5">
                                 {education.map((item, index) => (
@@ -101,9 +116,14 @@ export default function Resume(){
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-6 shadow-xl shadow-black/20">
+                        <motion.div
+                            initial={{opacity:0, y:100}}
+                            whileInView={{opacity:1, y:0}}
+                            viewport={{once:true, amount:0.5}}
+                            transition={{duration:1}} 
+                            className="rounded-[32px] border border-zinc-800 bg-zinc-950 p-6 shadow-xl shadow-black/20">
                             <h3 className="text-xl font-semibold text-slate-100 mb-4">Resume Highlights</h3>
                             <ul className="space-y-3 text-slate-300">
                                 <li className="flex gap-3 items-start">
@@ -119,7 +139,7 @@ export default function Resume(){
                                     <span>Proven track record building user-friendly dashboards and business platforms.</span>
                                 </li>
                             </ul>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

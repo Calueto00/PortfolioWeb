@@ -1,9 +1,14 @@
-
+import { motion } from "framer-motion"
 export default function Skills(){
     return(
         <section className="md:h-screen min-h-screen bg-zinc-950">
             <div className="lg:max-w-6xl mx-auto gap-3 py-12 md:py-0 p-4 md:p-0 h-full flex md:flex-row flex-col md:gap-15 items-center justify-between">
-                <div className="md:flex-1 space-y-2">
+                <motion.div 
+                    initial={{opacity:0, x: -100}} 
+                    whileInView={{opacity:1, x:0}}
+                    viewport={{once:true, amount:0.5}}
+                    transition={{duration:0.9}}
+                    className="md:flex-1 space-y-2">
                     <span className="text-sm text-gray-600">My Top</span>
                     <h3 className="text-2xl font-bold text-red-600">Skills Tech.</h3>
 
@@ -17,9 +22,14 @@ export default function Skills(){
                             I also have knowledge of databases, version control with Git, and frontend and backend best practices.
                         </p>
                     </div>
-                </div>
-                <div className="md:flex-1 grid md:grid-cols-2 grid-cols-1 gap-6">
-                    <div className="border bg-zinc-900 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y ">
+                </motion.div>
+                <motion.div 
+                    initial={{opacity:0, x: 100}} 
+                    whileInView={{opacity:1, x:0}}
+                    viewport={{once:true, amount:0.5}}
+                    transition={{duration:0.9}}
+                    className="md:flex-1 grid md:grid-cols-2 grid-cols-1 gap-6">
+                    <div className="border bg-zinc-800 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y ">
                         <h3 className="md:text-xl text-lg font-medium text-slate-200">Frontend</h3>
 
                         <ul className="space-y-2 space-x-2 md:text-lg text-slate-300">
@@ -33,7 +43,7 @@ export default function Skills(){
                             <button className="border rounded-full border-red-600 px-2">WordPress</button>
                         </ul>
                     </div>
-                    <div className="border bg-zinc-900 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y">
+                    <div className="border bg-zinc-800 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y">
                         <h3 className="md:text-xl text-lg font-medium text-slate-200">Backend</h3>
 
                         <ul className="space-y-2 space-x-2 text-slate-300">
@@ -44,7 +54,7 @@ export default function Skills(){
                             <button className="border rounded-full border-red-600 px-2">Express.js</button>
                         </ul>
                     </div>
-                    <div className="border bg-zinc-900 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y">
+                    <div className="border bg-zinc-800 p-3 rounded-lg space-y-3 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform-y">
                         <h3 className="md:text-xl text-lg font-medium text-slate-200">Databases</h3>
 
                         <ul className="space-y-2 space-x-2 text-slate-300">
@@ -54,7 +64,7 @@ export default function Skills(){
                             <button className="border rounded-full border-red-600 px-2">Postgreed</button>
                         </ul>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             
