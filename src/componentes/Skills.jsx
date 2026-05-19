@@ -2,7 +2,7 @@
 export default function Skills(){
     return(
         <section className="md:h-screen min-h-screen bg-zinc-950">
-            <div className="lg:max-w-6xl mx-auto gap-3 p-6 md:p-0 h-full flex md:flex-row flex-col md:gap-15 items-center justify-between">
+            <div className="lg:max-w-6xl mx-auto gap-3 py-12 md:py-0 p-4 md:p-0 h-full flex md:flex-row flex-col md:gap-15 items-center justify-between">
                 <div className="md:flex-1 space-y-2">
                     <span className="text-sm text-gray-600">My Top</span>
                     <h3 className="text-2xl font-bold text-red-600">Skills Tech.</h3>

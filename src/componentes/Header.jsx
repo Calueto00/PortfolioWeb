@@ -28,7 +28,7 @@ export default function Header() {
 
             {/* mobile version */}
             {size < 767 && 
-            <nav className="fixed w-full z-20 top-0 left-0 right-0 p-6 border-b border-white/20 bg-zinc-900/90 backdrop-blur-sm">
+            <nav className="fixed w-full z-20 top-0 left-0 right-0 p-4 border-b border-white/20 bg-zinc-900/90 backdrop-blur-sm">
                 <div className="flex items-center justify-between">
                     <h1 className="font-bold text-lg text-red-600">Paulo Calueto</h1>
                     <button 

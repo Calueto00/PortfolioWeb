@@ -51,7 +51,7 @@ export default function Resume(){
     ]
 
     return (
-        <section id="resume" className="min-h-screen bg-black/90 py-16">
+        <section id="resume" className="min-h-screen bg-black/90 py-12">
             <div className="lg:max-w-6xl mx-auto px-4">
                 <div className="text-center mb-12 space-y-3">
                     <span className="text-sm text-slate-400  ">Experience & Education</span>

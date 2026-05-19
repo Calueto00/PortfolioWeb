@@ -32,7 +32,7 @@ export default function Projects(){
     const [mouse, setMouse] = useState(false)
     return(
         <section id='projects' className="bg-black/90 md:h-screen">
-            <div className="md:max-w-6xl md:space-y-6 space-y-3 p-4 md:p-0 mx-auto h-full flex flex-col items-center justify-center">
+            <div className="md:max-w-6xl md:space-y-6 space-y-3 py-12 md:py-0 p-4 md:p-0 mx-auto h-full flex flex-col items-center justify-center">
                 <div className="text-center space-y-2">
                     <span className="text-sm text-slate-400">My Portfolio</span>
                     <h2 className="text-red-600 text-2xl font-bold">Check My Wonderful Work</h2>

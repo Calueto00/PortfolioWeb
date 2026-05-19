@@ -2,7 +2,7 @@
 export default function Contact(){
     return(
         <footer id="contact" className="md:h-screen bg-zinc-950">
-            <div className="h-full space-y-6 md:max-w-6xl mx-auto md:p-0 p-6 flex flex-col items-center justify-center">
+            <div className="h-full space-y-6 md:max-w-6xl mx-auto py-12 md:py-0 md:p-0 p-4 flex flex-col items-center justify-center">
                 <div className="text-center space-y-3">
                     <span className="text-sm text-slate-400">Contact</span>
                     <h3 className="text-2xl font-bold text-red-600">Get in Touch With me</h3>
@@ -11,7 +11,7 @@ export default function Contact(){
                     </p>
                 </div>
 
-                <div className="h-1/2 space-y-3 border-zinc-900 border w-full p-6 rounded-lg bg-zinc-900 shadow shadow-zinc-950">
+                <div className=" space-y-3 border-zinc-900 border w-full p-6 rounded-lg bg-zinc-900 shadow shadow-zinc-950">
                     <h3 className="text-lg text-slate-200 font-medium">Say Something</h3>
                     <div className="flex md:flex-row flex-col  justify-between gap-8">
                         <form action="https://formsubmit.co/paulo.calueto.francisco@gmail.com" className="flex-1 rounded-lg space-y-3">
@@ -27,7 +27,7 @@ export default function Contact(){
                                 <textarea 
                                     name="message" 
                                     id="" 
-                                    className="p-2 shadow-inner text-white outline-none shadow-black/90 border border-black/90 rounded-lg w-full"
+                                    className="p-2 shadow-inner h-25 text-white outline-none shadow-black/90 border border-black/90 rounded-lg w-full"
                                     placeholder="Message">
 
                                 </textarea>

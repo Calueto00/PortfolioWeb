@@ -17,7 +17,7 @@ const services = [
 export default function Services() {
     return (
         <section id="services" className="md:h-screen bg-zinc-950">
-            <div className="lg:max-w-6xl mx-auto h-full flex flex-col justify-center p-6 md:px-4">
+            <div className="lg:max-w-6xl mx-auto h-full flex flex-col justify-center py-12 md:py-0 p-4 md:px-4">
                 <div className="text-center space-y-2">
                     <span className="text-sm text-slate-400">What I do</span>
                     <h2 className="text-2xl font-bold text-red-600">My Services</h2>
