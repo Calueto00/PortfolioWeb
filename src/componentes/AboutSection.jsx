@@ -2,7 +2,7 @@ import perfil from '../assets/perfil.png'
 export default function AboutSection() {
     return (
         <section id="about" className="md:h-screen  bg-black/90">
-            <div className="lg:max-w-6xl p-4 md:p-0 space-y-3 mx-auto h-full flex flex-col items-center justify-center">
+            <div className="lg:max-w-6xl py-8 md:py-0 p-4 md:p-0 space-y-3 mx-auto h-full flex flex-col items-center justify-center">
                 
 
                  <div className="flex items-center md:flex-row flex-col justify-center gap-3 md:gap-9 w-full">
