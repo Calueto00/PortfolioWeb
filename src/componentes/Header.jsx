@@ -28,7 +28,7 @@ export default function Header() {
 
             {/* mobile version */}
             {size < 767 && 
-            <nav className="relative">
+            <nav className="fixed w-full z-20 top-0 left-0 right-0 p-6 border-b border-white/20 bg-zinc-900/90 backdrop-blur-sm">
                 <div className="flex items-center justify-between">
                     <h1 className="font-bold text-lg text-red-600">Paulo Calueto</h1>
                     <button 
@@ -53,7 +53,7 @@ export default function Header() {
                 </div>
 
                 {
-                    menuOpen && <ul className="flex flex-col p-2 items-center space-y-2 absolute w-full z-10 top-12 mt-1.5 bg-zinc-900">
+                    menuOpen && <ul className="flex flex-col p-2 items-center space-y-2 w-full">
                     { links?.map(link => (
                         <li 
                         className="cursor-pointer font-medium hover:bg-red-900 delay-150 rounded-lg duration-300 transition-ease-in-out transform w-full text-center p-2"

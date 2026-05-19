@@ -2,7 +2,7 @@ export default function HeroSection() {
 
     return (
         <section className="md:h-147 h-screen bg-black/95">
-            <div className="lg:max-w-5xl mx-auto h-full flex flex-col items-center md:p-0 p-4 justify-center space-y-3 md:space-y-6">
+            <div className="lg:max-w-5xl mx-auto h-full flex flex-col items-center md:p-0 p-4 justify-center space-y-6 md:space-y-6">
                 <span className="text-slate-300 bg-red-800 rounded-full p-1 px-3 md:text-md text-sm">Available for news projects</span>
                 <h1 className="text-white md:text-6xl text-3xl">Hey! , I am <span className="text-red-600 font-bold">Paulo</span></h1>
                 <h3 className="text-slate-300 md:text-3xl text-lg">Full-Stack-Developer</h3>
