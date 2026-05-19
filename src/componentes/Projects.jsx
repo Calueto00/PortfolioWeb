@@ -44,7 +44,7 @@ export default function Projects(){
                     {
                         projects?.map(project => (
                             <div className='bg-zinc-950 hover:shadow-md shadow-zinc-950 hover:scale-y-105 delay-150 duration-300
-                             relative h-82 w-full rounded-xl p-2 cursor-pointer'>
+                             relative md:h-82 w-full rounded-xl p-2 cursor-pointer'>
                                 <img 
                                     src={project?.image}
                                     className='w-full h-34 rounded-t-xl object-top object-cover'
