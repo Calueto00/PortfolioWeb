@@ -10,7 +10,7 @@ import facebook from '../assets/icons/facebook.svg'
 const icons = [
   {
     src: instagram,
-    href: '#',
+    href: 'https://www.instagram.com/paulo_calueto/',
     style: 'w-5 h-5 hover:scale-105 delay-150 duration-300 transition-all ease-in-out transform'
   },
   {
@@ -20,12 +20,12 @@ const icons = [
   },
   {
     src: linkedin,
-    href: '#',
+    href: 'https://www.linkedin.com/in/paulo-calueto-78a4a921b/',
     style: 'w-5 h-5 hover:scale-105 rounded-full delay-150 duration-300 transition-all ease-in-out transform'
   },
   {
     src: whatsapp,
-    href: '#',
+    href: 'https://wa.me/244937163467',
     style: 'w-5 h-5 hover:scale-105 hover:shadow shadow-green-600 rounded-full delay-150 duration-300 transition-all ease-in-out transform'
   },
   {

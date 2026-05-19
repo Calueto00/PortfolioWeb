@@ -30,7 +30,7 @@ export default function HeroSection() {
                         <a href="#projects" className=" px-4 py-2 bg-red-700 rounded-full text-slate-200">View my work</a>
                     </button>
                     <button className="cursor-pointer hover:scale-110 duration-200 delay-150 transition ease-in-out">
-                        <a href="#" className=" px-4 py-2 border-2 border-red-600 rounded-full text-slate-200">Get in Touch</a>
+                        <a href="https://wa.me/244937163467" className=" px-4 py-2 border-2 border-red-600 rounded-full text-slate-200">Get in Touch</a>
                     </button>
                 </motion.div>
             </div>

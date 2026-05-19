@@ -77,7 +77,7 @@ export default function Projects(){
                 <div className='bg-zinc-950 md:w-1/2 w-full flex items-center justify-between px-3 py-3 rounded-full'>
                     <h4 className='text-slate-200 '>Hire me for your Project</h4>
                     <button className='delay-150 transition duration-300 hover:scale-105'>
-                        <a className='bg-white rounded-full p-2 md:px-4'  href="#">Hire Me</a>
+                        <a className='bg-white rounded-full p-2 md:px-4'  href="https://wa.me/244937163467">Hire Me</a>
                     </button>
                 </div>
             </div>
