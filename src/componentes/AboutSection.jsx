@@ -33,7 +33,7 @@ export default function AboutSection() {
                             challenge me to grow and learn something new.
                         </p>
 
-                        <button className="hover:scale-105 transition-all deay-150 duration transform cursor-pointer">
+                        <button className="hover:scale-105 mt-4 md:mt-2 transition-all deay-150 duration transform cursor-pointer">
                             <a className="md:px-6 md:py-3 px-4 py-1 rounded-full bg-red-600/90 text-lg text-slate-300 shadow-md shadow-red-600/90"
                              href="#">Download Cv</a>
                         </button>
