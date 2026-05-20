@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import cv from '../assets/pdf/paulo_francisco_cv.pdf'
 
 import perfil from '../assets/perfil.png'
 export default function AboutSection() {
@@ -10,7 +11,7 @@ export default function AboutSection() {
                  <div className="flex items-center md:flex-row flex-col justify-center gap-3 md:gap-9 w-full">
                     <motion.div initial={{opacity:0, x:-50}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.5}} transition={{duration:0.9}}
                         className="md:flex-1 w-full ">
-                        <img src={perfil} alt="" className='md:h-100 h-70 w-full object-fit rounded-lg' />
+                        <img loading='lazy' src={perfil} alt="" className='md:h-100 h-70 w-full object-fit rounded-lg' />
                     </motion.div>
 
 
@@ -43,7 +44,7 @@ export default function AboutSection() {
 
                         <button className="hover:scale-105 mt-4 md:mt-2 transition-all deay-150 duration transform cursor-pointer">
                             <a className="md:px-6 md:py-3 px-4 py-1 rounded-full bg-red-600/90 text-lg text-slate-300 shadow-md shadow-red-600/90"
-                             href="#">Download Cv</a>
+                             href={cv}  download>Download Cv</a>
                         </button>
                     </motion.div>
                  </div>

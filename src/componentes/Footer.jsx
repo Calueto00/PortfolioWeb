@@ -46,7 +46,7 @@ export default function Footer() {
           {
             icons?.map(icon => (
               <li key={icon}>
-                <a href={icon.href}>
+                <a href={icon.href} target="_blank">
                   <img className={icon.style} src={icon.src} alt="" />
                 </a>
               </li>
