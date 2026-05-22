@@ -23,7 +23,7 @@ export default function Header() {
     ]
     
     return (
-        <header className=" bg-black/90 text-white p-2">
+        <header id="hero" className=" bg-black/90 text-white p-2">
            
 
             {/* mobile version */}

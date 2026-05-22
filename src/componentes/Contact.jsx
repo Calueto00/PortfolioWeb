@@ -1,5 +1,23 @@
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
+
 import { motion } from "framer-motion"
 export default function Contact(){
+    const form = useRef()
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+      
+
+        emailjs.sendForm(
+            "service_0ihw2ae",
+            "template_qeqq06n",
+            form.current,
+            "AuoRGziluJOG07GJk"
+        ).then(() => alert("Email sent successfully"),
+         () => alert("Failed to send email, please try again later"))
+    }
+
     return(
         <footer id="contact" className="md:h-screen bg-zinc-950">
             <div className="h-full space-y-6 md:max-w-6xl mx-auto py-12 md:py-0 md:p-0 p-4 flex flex-col items-center justify-center">
@@ -24,23 +42,31 @@ export default function Contact(){
                     className=" space-y-3 border-zinc-900 border w-full p-6 rounded-lg bg-zinc-800 shadow shadow-zinc-950">
                     <h3 className="text-lg text-slate-200 font-medium">Say Something</h3>
                     <div className="flex md:flex-row flex-col  justify-between gap-8">
-                        <form action="https://formsubmit.co/paulo.calueto.francisco@gmail.com" method="post" className="flex-1 rounded-lg space-y-3">
+                        <form ref={form} onSubmit={sendEmail} className="flex-1 rounded-lg space-y-3">
                             <div className="space-y-3">
-                                <input type="text" 
-                                        placeholder="Name..."
-                                        name="name"
-                                        className="w-full text-white shadow-inner shadow-black/90 border border-black/90 rounded-lg p-2 outline-none" />
-                                <input type="email" 
-                                        placeholder="Email..."
-                                        name="email"
-                                        className="w-full shadow-inner text-white shadow-black/90 border border-black/90 rounded-lg p-2 outline-none" />
-                                <textarea 
-                                    name="message" 
-                                    id="" 
+                                <input
+                                    type="text"
+                                    placeholder="Name..."
+                                    name="name"
+                                   
+                                    className="w-full text-white shadow-inner shadow-black/90 border border-black/90 rounded-lg p-2 outline-none"
+                                />
+                                
+                                <input
+                                    type="email"
+                                    placeholder="Email..."
+                                    name="email"
+                                    
+                                    className="w-full shadow-inner text-white shadow-black/90 border border-black/90 rounded-lg p-2 outline-none"
+                                />
+                                
+                                <textarea
+                                    name="message"
                                     className="p-2 shadow-inner h-25 text-white outline-none shadow-black/90 border border-black/90 rounded-lg w-full"
-                                    placeholder="Message">
-
-                                </textarea>
+                                    placeholder="Message"
+                                    
+                                />
+                               
                                 
                             </div>
                             <div>
